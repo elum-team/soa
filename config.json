@@ -1,0 +1,6 @@
+{
+  "secret": "dfhsg5478ghfhjghdfghji",
+  "services": {
+    "shop": "127.0.0.1:18400"
+  }
+}

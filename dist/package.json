@@ -1,0 +1,33 @@
+{
+  "name": "@elum/soa",
+  "version": "0.0.1",
+  "description": "Elum State - A state management library for React",
+  "main": "index.js",
+  "module": "index.mjs",
+  "typings": "index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Artur Frank",
+    "url": "https://vk.com/gmelum"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMELUM/elum-state.git"
+  },
+  "keywords": [
+    "state",
+    "manager",
+    "redux",
+    "react",
+    "recoil",
+    "state",
+    "elum"
+  ],
+  "peerDependencies": {
+    "fastify": "^4",
+    "@fastify/cors": "^8",
+    "@fastify/multipart": "^7",
+    "@fastify/formbody": "^7"
+  }
+}
