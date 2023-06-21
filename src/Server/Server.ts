@@ -180,5 +180,7 @@ class Server<M extends Record<string, any>>{
 }
 
 export {
-  Server
+  Server,
+  type Callback,
+  type Events
 }
