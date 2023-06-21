@@ -1,4 +1,9 @@
-import Fastify, { FastifyInstance, FastifyReply, FastifyRequest, HookHandlerDoneFunction } from "fastify";
+import Fastify, {
+  FastifyInstance,
+  FastifyReply,
+  FastifyRequest,
+  HookHandlerDoneFunction
+} from "fastify";
 
 import cors from "@fastify/cors";
 import multipart from "@fastify/multipart";
@@ -79,7 +84,6 @@ class Server<M extends Record<string, any>>{
       if (!this.callback) { response(Request.NotReady); return; }
 
       const { type, value } = request.body;
-      console.log(request.body)
       if (!type || !value) { response(Request.BadRequest); return; };
 
 
@@ -150,10 +154,12 @@ class Server<M extends Record<string, any>>{
 
     if (!callback) {
       return new Promise(async (resolve) => {
-        const request = await fetch(host, data);
-        const { error, response } = await request.json() as Record<string, any>;
-        if (error) { console.error(error); }
-        resolve([error, response]);
+        try {
+          const request = await fetch(host, data);
+          const { error, response } = await request.json() as Record<string, any>;
+          if (error) { console.error(error); }
+          resolve([error, response]);
+        } catch { resolve([Request.ServerError.error, undefined]) };
       });
     } else {
       new Promise(async () => {
