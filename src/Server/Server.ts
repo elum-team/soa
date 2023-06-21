@@ -9,12 +9,8 @@ import cors from "@fastify/cors";
 import multipart from "@fastify/multipart";
 import formbody from "@fastify/formbody";
 
-import { Request, TypeError } from "../index";
-
-type Callback = (value: any, reply: any) => void;
-type Events = (events: Record<string, Callback>) => void;
-
-type Listen = (PORT: number, HOST: string) => Promise<unknown>;
+import { Callback, Events, Listen, TypeError } from "../types";
+import { Request } from "../Request/Request";
 
 interface ExecuteRequest {
   Body: {

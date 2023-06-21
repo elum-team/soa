@@ -1,4 +1,4 @@
-export { Server } from "./Server/Server";
+export { Server, type Callback, type Events } from "./Server/Server";
 export { Request } from "./Request/Request";
 
 export {

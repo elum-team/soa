@@ -1,3 +1,8 @@
+type Callback = (value: any, reply: any) => void;
+type Events = (events: Record<string, Callback>) => void;
+
+type Listen = (PORT: number, HOST: string) => Promise<unknown>;
+
 type TypeError = {
   code: number;
   message: string;
@@ -18,6 +23,9 @@ type Action<
 
 export {
   Action,
+  Callback,
+  Events,
+  Listen,
   RequestData,
   TypeError
 }

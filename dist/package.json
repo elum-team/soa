@@ -1,7 +1,7 @@
 {
   "name": "@elum/soa",
-  "version": "0.0.4",
-  "description": "Elum State - A state management library for React",
+  "version": "0.0.5",
+  "description": "microservice soa system",
   "main": "index.js",
   "module": "index.mjs",
   "typings": "index.d.ts",
@@ -13,15 +13,10 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GMELUM/elum-state.git"
+    "url": "git+https://github.com/elum-team/soa.git"
   },
   "keywords": [
-    "state",
-    "manager",
-    "redux",
-    "react",
-    "recoil",
-    "state",
+    "soa",
     "elum"
   ],
   "peerDependencies": {
