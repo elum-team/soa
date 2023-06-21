@@ -1,6 +1,6 @@
 {
   "name": "@elum/soa",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "microservice soa system",
   "main": "index.js",
   "module": "index.mjs",

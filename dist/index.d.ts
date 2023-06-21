@@ -54,4 +54,4 @@ declare class Request {
     };
 }
 
-export { Action, Callback, Events, Request, RequestData, Server, TypeError };
+export { Action, Callback, Events, Listen, Request, RequestData, Server, TypeError };

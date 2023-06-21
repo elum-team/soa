@@ -1,4 +1,4 @@
-import { Action, Request, Server, Callback } from "./src";
+import { Action, Request, Server, Callback } from "./dist";
 
 import config from "./config.json";
 
